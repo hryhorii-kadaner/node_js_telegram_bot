@@ -49,7 +49,7 @@ bot.on('message', (msg) => {
             return false;
         } else {
             bot.sendMessage(msg.chat.id, "Я пока что не настолько умён. Отправил ответ админу.\n\nBot is running on Node.js(v12.18.1) + Hiroku + Github.\nMade by @MrGregorK", mainOptions);
-            bot.sendMessage(msg.chat.id = '466777337', '<b>Сообщение от</b>: ' + msg.from.first_name + ' ' + msg.from.last_name + '\n<b>Username:</b> @' + msg.from.username + '\nUser chat ID: ' + msg.from.id + '\n----------------\n' + msg.text, {
+            bot.sendMessage(msg.chat.id = '466777337', '<b>Сообщение от</b>: ' + msg.from.first_name + ' ' + msg.from.last_name + '\n<b>Username:</b> @' + msg.from.username + '\n<b>User chat ID</b>: ' + msg.from.id + '\n----------------\n' + msg.text, {
                 parse_mode: "HTML"
             });
         }
