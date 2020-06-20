@@ -56,13 +56,3 @@ bot.on('message', (msg) => {
 
     }
 });
-
-let date = new Date();
-console.log('\n\n-------------------Bot started working (' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds() + ')-------------------\n\n');
-
-setInterval(function () {
-    let newDate = new Date();
-    console.log('-------------------Bot is working (' + newDate.getHours() + ':' + newDate.getMinutes() + ':' + newDate.getSeconds() + ')-------------------\n');
-}, 10000);
-
-// Простая команда без параметров
