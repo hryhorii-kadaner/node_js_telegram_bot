@@ -1,20 +1,3 @@
-// Starting server
-const http = require('http');
-const port = 3000;
-const requestHandler = (request, response) => {
-    console.log(request.url);
-    response.end('Hello Node.js Server!');
-};
-const server = http.createServer(requestHandler);
-server.listen(port, (err) => {
-    if (err) {
-        return console.log('something bad happened', err);
-    }
-    console.log(`server is listening on ${port}`);
-});
-
-// Starting server
-
 let TelegramBot = require('node-telegram-bot-api'),
     token = '1264102208:AAG2odfAZmrurchSALRGjMdDyik0Xyr_Ho4';
 
@@ -61,6 +44,8 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id, "А я типа не робот");
     } else if (msg.text === '<- Back') {
         bot.sendMessage(msg.chat.id, text = "Вы вернулись в Главное меню!", mainOptions);
+    } else if(msg.chat.id == '614042909') {
+        bot.sendMessage(msg.chat.id, text = "Ой иди в жопу я обиделся на тебя :(");
     } else {
         if (msg.text === '/start') {
             return false;
