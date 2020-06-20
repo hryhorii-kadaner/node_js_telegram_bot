@@ -44,8 +44,6 @@ bot.on('message', (msg) => {
         bot.sendMessage(msg.chat.id, "А я типа не робот");
     } else if (msg.text === '<- Back') {
         bot.sendMessage(msg.chat.id, text = "Вы вернулись в Главное меню!", mainOptions);
-    } else if(msg.chat.id == '614042909') {
-        bot.sendMessage(msg.chat.id, text = "Ой иди в жопу я обиделся на тебя :(");
     } else {
         if (msg.text === '/start') {
             return false;
