@@ -1,3 +1,4 @@
 export const blockWebsiteInit = () => {
-    document.body.write('Где оплата?');
+    // let date = new Date;
+    document.write('Где оплата?');
 }; 
